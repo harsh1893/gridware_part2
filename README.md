@@ -13,18 +13,26 @@
 
 ## Repository instruction
 1. Open terminal and run following command "git clone https://github.com/harsh1893/gridware_part2.git"
+2. then run "git submodule update --init --recursive"
 
 
 ## Testing the API
+Inside the project directory, run "make test"
+then run "./bin/api_test.o" 
+
+## Compiling API
+Inside the project directory, run "make project"
+
+## Cleaning compiled files
+Inside the project directory, run "make clean"
 
 ## Repository Structure
-|- protobuf -> contains gridware .proto file
-|-- gridware.proto
-|- build -> contains intermediatary files 
-|-- ...
-|- cpp-wrapper
-|- nanopb -> nanopb library files
-|- test
-|- Makefile
-|- Readme
+- GRIDWARE_PART2
+-- bin : contains compiled file 
+-- build : contains .pb file
+-- cpp_wrapper : contains .cpp/.h files for APIs
+-- nanopb : nanopb library
+-- protobuf : .proto file and its generated.c/.h compiled files
+-- test:  .cpp/.h files to test APIs
+
 
